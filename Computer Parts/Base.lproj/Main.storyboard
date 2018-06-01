@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4Wg-8Q-Ccf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Computers-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Computer_Parts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,337 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_inside_pc.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Kgl-Mn-k1V">
+                                <rect key="frame" x="16" y="72" width="343" height="328"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="XfY-0v-cQx"/>
+                                    <constraint firstAttribute="height" constant="328" id="tLZ-wG-twi"/>
+                                    <constraint firstAttribute="height" constant="295" id="uak-ca-UER"/>
+                                    <constraint firstAttribute="width" constant="343" id="yjM-6g-oqO"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XfY-0v-cQx"/>
+                                        <exclude reference="tLZ-wG-twi"/>
+                                        <exclude reference="uak-ca-UER"/>
+                                        <exclude reference="yjM-6g-oqO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="XfY-0v-cQx"/>
+                                        <include reference="uak-ca-UER"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="tLZ-wG-twi"/>
+                                        <include reference="yjM-6g-oqO"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ever wonder about the parts inside your computer. What are they and what do they do?  Touch NEXT to find out." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJq-zn-cKh">
+                                <rect key="frame" x="379" y="64" width="268" height="204"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEo-Us-4t8">
+                                <rect key="frame" x="462" y="276" width="103" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="FTq-ez-s7s"/>
+                                    <constraint firstAttribute="width" constant="103" id="LHA-c4-gKb"/>
+                                    <constraint firstAttribute="width" constant="103" id="bLx-WS-Fzq"/>
+                                    <constraint firstAttribute="height" constant="65" id="qFh-ca-9jH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FTq-ez-s7s"/>
+                                        <exclude reference="LHA-c4-gKb"/>
+                                        <exclude reference="bLx-WS-Fzq"/>
+                                        <exclude reference="qFh-ca-9jH"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="FTq-ez-s7s"/>
+                                        <include reference="bLx-WS-Fzq"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="LHA-c4-gKb"/>
+                                        <include reference="qFh-ca-9jH"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="5fF-ww-CfY" kind="show" id="6yN-XS-vfT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hJq-zn-cKh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0G8-9h-ujg"/>
+                            <constraint firstItem="hJq-zn-cKh" firstAttribute="leading" secondItem="Kgl-Mn-k1V" secondAttribute="trailing" constant="20" id="3bl-d0-h9r"/>
+                            <constraint firstItem="hJq-zn-cKh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6dS-Z4-Fpu"/>
+                            <constraint firstItem="KEo-Us-4t8" firstAttribute="top" secondItem="hJq-zn-cKh" secondAttribute="bottom" constant="8" id="AjP-dt-8OM"/>
+                            <constraint firstItem="Kgl-Mn-k1V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Cbo-Nb-33p"/>
+                            <constraint firstItem="Kgl-Mn-k1V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Etz-Tb-dmk"/>
+                            <constraint firstItem="KEo-Us-4t8" firstAttribute="top" secondItem="hJq-zn-cKh" secondAttribute="bottom" constant="8" id="HQq-se-RqU"/>
+                            <constraint firstItem="hJq-zn-cKh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KF0-43-lWz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hJq-zn-cKh" secondAttribute="trailing" id="OjF-ci-fCw"/>
+                            <constraint firstItem="KEo-Us-4t8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e3g-zZ-fI6"/>
+                            <constraint firstItem="Kgl-Mn-k1V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="htX-ZS-iev"/>
+                            <constraint firstItem="hJq-zn-cKh" firstAttribute="top" secondItem="Kgl-Mn-k1V" secondAttribute="bottom" constant="8" id="mLN-mF-FlK"/>
+                            <constraint firstItem="Kgl-Mn-k1V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="mdQ-0s-7Si"/>
+                            <constraint firstItem="KEo-Us-4t8" firstAttribute="leading" secondItem="Kgl-Mn-k1V" secondAttribute="trailing" constant="103" id="xAM-Ir-n4E"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Cbo-Nb-33p"/>
+                                <exclude reference="Etz-Tb-dmk"/>
+                                <exclude reference="htX-ZS-iev"/>
+                                <exclude reference="mdQ-0s-7Si"/>
+                                <exclude reference="0G8-9h-ujg"/>
+                                <exclude reference="3bl-d0-h9r"/>
+                                <exclude reference="6dS-Z4-Fpu"/>
+                                <exclude reference="KF0-43-lWz"/>
+                                <exclude reference="OjF-ci-fCw"/>
+                                <exclude reference="mLN-mF-FlK"/>
+                                <exclude reference="AjP-dt-8OM"/>
+                                <exclude reference="HQq-se-RqU"/>
+                                <exclude reference="e3g-zZ-fI6"/>
+                                <exclude reference="xAM-Ir-n4E"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="htX-ZS-iev"/>
+                                <include reference="mdQ-0s-7Si"/>
+                                <include reference="0G8-9h-ujg"/>
+                                <include reference="3bl-d0-h9r"/>
+                                <include reference="6dS-Z4-Fpu"/>
+                                <include reference="AjP-dt-8OM"/>
+                                <include reference="xAM-Ir-n4E"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Cbo-Nb-33p"/>
+                                <include reference="Etz-Tb-dmk"/>
+                                <include reference="KF0-43-lWz"/>
+                                <include reference="OjF-ci-fCw"/>
+                                <include reference="mLN-mF-FlK"/>
+                                <include reference="HQq-se-RqU"/>
+                                <include reference="e3g-zZ-fI6"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Computers" id="PO7-tv-bMQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="865.81709145427294" y="-549.60000000000002"/>
+        </scene>
+        <!--Parts-->
+        <scene sceneID="QVo-ec-0Xq">
+            <objects>
+                <viewController title="Parts" id="5fF-ww-CfY" customClass="InsideVC" customModule="Computer_Parts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LUU-5T-qmv"/>
+                        <viewControllerLayoutGuide type="bottom" id="cMg-ME-oRc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dW4-PT-aQw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click on a label inside the computer to see a description of the part and what it does." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBB-iA-5Zn">
+                                <rect key="frame" x="16" y="72" width="378" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InsidePC.png" translatesAutoresizingMaskIntoConstraints="NO" id="fWP-Uc-g2L">
+                                <rect key="frame" x="0.0" y="173" width="414" height="486"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOT-Pe-Elg">
+                                <rect key="frame" x="94" y="307" width="46" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="CPU">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCPU:" destination="5fF-ww-CfY" eventType="touchUpInside" id="cqa-eu-xTx"/>
+                                    <segue destination="sar-fh-E8L" kind="show" id="i34-4r-Wlg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6z2-6u-fT6">
+                                <rect key="frame" x="153" y="290" width="46" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="RAM">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRAM:" destination="5fF-ww-CfY" eventType="touchUpInside" id="fhl-WI-ctY"/>
+                                    <segue destination="sar-fh-E8L" kind="show" id="0aj-50-gXy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ2-k7-6RG">
+                                <rect key="frame" x="53" y="233" width="46" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="PSU">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPSU:" destination="5fF-ww-CfY" eventType="touchUpInside" id="emL-sP-bRv"/>
+                                    <segue destination="sar-fh-E8L" kind="show" id="JM4-21-Oqy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAf-hW-MK6">
+                                <rect key="frame" x="34" y="454" width="46" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="FAN">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFan:" destination="5fF-ww-CfY" eventType="touchUpInside" id="z9a-mk-hVc"/>
+                                    <segue destination="sar-fh-E8L" kind="show" id="YlG-q9-NG6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsc-zp-HfB">
+                                <rect key="frame" x="144" y="431" width="71" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Video Card">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnVideoCard:" destination="5fF-ww-CfY" eventType="touchUpInside" id="Lwh-OO-oBA"/>
+                                    <segue destination="sar-fh-E8L" kind="show" id="MJ5-yV-kfo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvS-DW-Bxj">
+                                <rect key="frame" x="223" y="442" width="70" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Hard Drive">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHardDrive:" destination="5fF-ww-CfY" eventType="touchUpInside" id="ZoF-JI-Xec"/>
+                                    <segue destination="sar-fh-E8L" kind="show" id="AWE-gL-Z8P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9II-dB-0fv">
+                                <rect key="frame" x="53" y="569" width="87" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Motherboard">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnMotherboard:" destination="5fF-ww-CfY" eventType="touchUpInside" id="le7-3w-d7v"/>
+                                    <segue destination="sar-fh-E8L" kind="show" id="fr5-hd-g4P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8x-Dw-o7J">
+                                <rect key="frame" x="277" y="233" width="72" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="DVD Drive">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDVD:" destination="5fF-ww-CfY" eventType="touchUpInside" id="sKb-1t-luZ"/>
+                                    <segue destination="sar-fh-E8L" kind="show" id="tif-rq-ryL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CVe-mc-qdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704.3478260869567" y="-547.01086956521749"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="EGX-wl-vZR">
+            <objects>
+                <viewController title="Details" id="sar-fh-E8L" customClass="DetailsVC" customModule="Computer_Parts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7UQ-Su-Ak5"/>
+                        <viewControllerLayoutGuide type="bottom" id="mcw-GO-aZ2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2RS-wz-Fko">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wvu-Zr-eBY">
+                                <rect key="frame" x="14" y="72" width="384" height="237"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNY-yf-Ibt">
+                                <rect key="frame" x="20" y="317" width="378" height="399"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgPart" destination="wvu-Zr-eBY" id="UrG-Iz-juq"/>
+                        <outlet property="lblDescription" destination="xNY-yf-Ibt" id="9sj-dc-uhJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jbd-qj-UrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2540.579710144928" y="-547.01086956521749"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1e2-DB-5jI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Wg-8Q-Ccf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C5O-v0-yiv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ct4-wv-CB6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PN5-6A-aBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.59999999999999" y="-545.57721139430294"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="InsidePC.png" width="691" height="597"/>
+        <image name="blue_inside_pc.jpg" width="640" height="480"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="i34-4r-Wlg"/>
+    </inferredMetricsTieBreakers>
 </document>
